@@ -15,29 +15,17 @@
        
         <img src="./media/img/mediamix-removebg-preview.png" width="200px" height="" alt="mediamix"><br><br>
         <h2>Sign Up</h2>
-        <form action="">
+        <form action="./signIn.html">
             <input type="text" placeholder="First Name"> <br><br>         
             <input type="text" placeholder="Last Name"><br><br>
-            <input type="number" placeholder="Phone Number"><br><br>
-            <input type="email" placeholder="Email id"><br><br>
-            <input type="password" placeholder="Password"><br><br>
-            <input type="password" placeholder="Confirm Password"><br><br>
+            <input type="text" placeholder="Phone Number" id="phone"> <br><br> 
+            <input type="text" placeholder="Email" id="mail"> <br><br>
+            <input type="text" placeholder="Password" id="pass"> <br><br>
+             <input type="text" placeholder="Confirm Password" id="confirm"> <br><br>
+            <button onclick="SignUpValidation()">SignUp</button>
+             <button type="submit">Cancel</button><br><br>
+             <p id="error" style="color: red;"></p>
         </form>
-        <table>
-            <tr>
-                <td>
-                    <form action="./signIn.html">
-                        <button type="submit">Cancel</button>
-                    </form>
-                </td>
-                <td>
-                    <form action="./verifyPage.html">
-                        <button type="submit">Next</button>
-                    </form>
-                </td>
-
-            </tr>
-        </table>
     </center>
 </body>
 </html>
