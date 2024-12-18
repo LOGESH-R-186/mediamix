@@ -9,15 +9,15 @@
             background-color: beige;
         }
     </style>
+    <script src="../js/script.js"></script>
 </head>
 <body>
     <center>
         <img src="./media/img/mediamix-removebg-preview.png" width="200px" height="" alt="mediamix"><br><br>
             <h2>Verify Email id or Phone Number</h2>
-        <form action="./otp.html">
-            <input type="text" placeholder="Email id or Phone Number"><br><br>
-            <button type="submit">Verify</button>
-        </form>
+            <input type="text" placeholder="Email id or Phone Number" id="email"><br><br>
+            <button onclick="VerifyEmail()">Verify</button><br><br>
+            <p id="error" style="color: red;"></p>
     </center>
 </body>
 </html>

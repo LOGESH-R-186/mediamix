@@ -9,13 +9,12 @@
             background-color: beige;
         }
     </style>
+    <script src="../js/script.js"></script>
 </head>
 <body>
     <center>
-       
         <img src="./media/img/mediamix-removebg-preview.png" width="200px" height="" alt="mediamix"><br><br>
         <h2>Sign Up</h2>
-        <form action="./signIn.html">
             <input type="text" placeholder="First Name"> <br><br>         
             <input type="text" placeholder="Last Name"><br><br>
             <input type="text" placeholder="Phone Number" id="phone"> <br><br> 
@@ -23,9 +22,8 @@
             <input type="text" placeholder="Password" id="pass"> <br><br>
              <input type="text" placeholder="Confirm Password" id="confirm"> <br><br>
             <button onclick="SignUpValidation()">SignUp</button>
-             <button type="submit">Cancel</button><br><br>
+             <button onclick="SignIn()">Cancel</button><br><br>
              <p id="error" style="color: red;"></p>
-        </form>
     </center>
 </body>
 </html>

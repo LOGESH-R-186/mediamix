@@ -1,0 +1,27 @@
+*{
+    background-color: black;
+}
+h4{
+    color: green;
+    font-size: xx-large;
+}
+i{
+    font-size: 40px;
+    color: red;
+}
+
+#language{
+    font-size: large;
+    color: rgba(239, 235, 241, 0.845);
+    
+}
+.button{
+    background-color: whitesmoke;
+}
+
+#langname{
+  color: red;
+  font-size: x-large;
+  text-align: center;
+  
+}

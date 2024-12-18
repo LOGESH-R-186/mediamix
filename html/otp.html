@@ -4,29 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verification Page</title>
-</head>
-<style>
-    *{
-        background-color: beige;
+
+    <script>
+         var GeneratedOTP = Math.floor(Math.random()*999999)
+         alert(GeneratedOTP)
+         
+function VerifyOTP()
+{
+     var EnteredOTP=document.getElementById("OTP").value
+     if(GeneratedOTP==EnteredOTP)
+     {
+        window.location.href="../html/signIn.html"
+     }
+     else{
+        document.getElementById("error").innerHTML="Invalid Details"
     }
-</style>
+}
+ function ResendOTP()
+ {
+    window.location.href="./otp.html"
+ }
+    </script>
+
+    <style>
+
+        *{
+            background-color: beige;
+        }
+    </style>
+    
+</head>
+
 <body>
      <center>
     <img src="./media/img/mediamix-removebg-preview.png" width="200px" height="" alt="mediamix"><br><br>
         <h2>OTP Verification</h2> 
-        <form action="./signIn.html">
-            
-            <input type="text" placeholder="Enter Verification Code"> <br><br> 
-            <button type="submit">Verify</button> 
-           </form>
-           <form action="">
+        <p id="error" style="color: red;"></p>
+        <input type="text" placeholder="Enter Verification Code" id="OTP"> <br><br> 
+            <button onclick="VerifyOTP()">Verify</button> 
             <table>
                 <tr>
                     <td> <h4>Send OTP Again ?</h4></td>
-                    <td> <button>Resend OTP</button></td>
+                    <td> <button onclick="ResendOTP()">Resend OTP</button></td>
                 </tr>
             </table>
-           </form>
         </center>
 </body>
 </html>

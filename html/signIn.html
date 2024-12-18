@@ -9,6 +9,8 @@
             background-color: beige;
         }
     </style>
+
+    <script src="../js/script.js"></script>
     
 </head>
 <body>
@@ -16,29 +18,28 @@
         
         <img src="./media/img/mediamix-removebg-preview.png" width="200px" alt="mediamix"><br><br>
         <h2>Sign In</h2>
-        <form action="/index.html">
-            <input type="text" placeholder="Username" >
+        
+            <input type="text" placeholder="Username"  id="user">
             <br>
             <br>
-            <input type="password" placeholder="Password">
+            <input type="password" placeholder="Password" id="pass">
             <br>
             <br>
-            <a href="./verify_pass.html">Forgot Password ?</a>
+            <a href="./verifyPage.html">Forgot Password ?</a>
             <br>
             <br>
-            <button type="submit">Login</button>
+            <button onclick="LoginValidation()">Login</button>
             <br>
+            <p id="error" style="color: red;"></p><br>
            
-        </form>
-        <form action="./signUp.html">
+
             <table>
                 <tr>
                     <td> <p>Are You a New User ?</p></td>
-                    <td>   <button type="submit">Sign Up</button></td>
+                    <td>   <button onclick="Signup()">Sign Up</button></td>
                 </tr>
          
         </table>
-        </form>
     </center>
 </body>
 </html>

@@ -4,37 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home:Movies</title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        *{
-            background-color: black;
-        }
-        h4{
-            color: green;
-            font-size: xx-large;
-        }
-        i{
-            font-size: 40px;
-            color: red;
-        }
-
-        .name{
-            font-size: large;
-            color: rgba(239, 235, 241, 0.845);
-            
-        }
-        .button{
-            background-color: whitesmoke;
-        }
-
-        #langname{
-          color: red;
-          font-size: x-large;
-          text-align: center;
-          
-        }
-         
-    </style>
+    
+    <link rel="stylesheet" href="../../css/styles.css">
+    
+    <script src="../../js/script.js"></script>
 </head>
 <body>
     <center> <img src="../media/img/mediamix-removebg-preview.png "width="200px" height="" alt="mediamix"> 
@@ -52,24 +27,21 @@
               </tr>
         </table><br><br>
 
-        <form action="">
             <table cellspacing="5" cellpadding="5">
                 <tr class="name">
-                    <td><label style="font-size: larger;font-weight: 400;">Choose a language :  </label></td>
+                    <td><label style="font-size: larger;font-weight: 400; color: aliceblue;">Choose a language :  </label></td>
                     <td>
-                        <select class="name">
-                            <option>-language-</option>
+                        <select id="language">
+                            <option>--language--</option>
                             <option>Tamil</option>
                             <option>Telugu</option>
                             <option>Malaiyalam</option>
                             <option>Hollywood</option>
                             <option>Hindi</option>
                         </select>
-                    </td> 
-                        <td ><i class="fa-solid fa-arrow-right" style="color: rgb(177, 177, 177);font-size:20px;"></i></i></td>
-                </tr>
+                        <button onclick="chooselanguage()" style="border: 0px;" ><i class="fa-solid fa-arrow-right-long" style="font-size:20px; "></i></button>
             </table>
-        </form>
+       
     <br>
         <table>
           <tr>
@@ -119,7 +91,5 @@
                 
         </table><br><br>
     
-    
-    
 </body>
-</html>
+</html><link rel="stylesheet" href="../../">
